@@ -3,7 +3,7 @@
     'name': 'Valued Delivery Slip',
     'version': '19.0.1.0.0',
     'category': 'Inventory',
-    'summary': 'Add unit price, discount, tax and totals to the Delivery Slip report',
+    'summary': 'Show Sales Order pricing, discount and tax on the Delivery Slip / Picking report',
     'description': """
 <p>A clean, light, and robust module that adds pricing, discount, and tax
 details to the standard Delivery Slip (Bon de Livraison) report.</p>
