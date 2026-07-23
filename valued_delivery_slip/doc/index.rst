@@ -37,6 +37,19 @@ To use this module:
 4. Click on **Print** > **Delivery Slip**. The PDF report will contain the detailed pricing columns and financial summary.
 5. If you print a Delivery Slip that is not linked to any confirmed Sales Order, it will automatically fall back to the standard layout (quantities only).
 
+Screenshots
+===========
+
+**Before** — Standard Odoo Delivery Slip (quantities only):
+
+.. figure:: ../static/description/bl_before.png
+   :alt: Delivery Slip before
+
+**After** — With Valued Delivery Slip installed (pricing, discount, tax, totals):
+
+.. figure:: ../static/description/bl_after.png
+   :alt: Delivery Slip after
+
 Bug Tracker
 ===========
 
