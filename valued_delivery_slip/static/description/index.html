@@ -1,26 +1,117 @@
-<section class="oe_container">
+<section class="oe_container" style="font-family: 'Montserrat', 'Segoe UI', Roboto, sans-serif; background-color: #f8f9fa; padding: 20px 0;">
     <div class="oe_row oe_spaced">
-        <p class="oe_mt32">
-            A clean, light, and robust module that adds pricing, discount, and tax
-            details to the standard Delivery Slip (Bon de Livraison) report.
-        </p>
-        <p>
-            By default, Odoo's Delivery Slip only displays product quantities
-            (ordered and delivered). This module inherits the standard report to
-            display complete financial information when the delivery is linked to
-            a Sales Order.
-        </p>
-        <h3>Features</h3>
-        <ul>
-            <li>Unit Price, Discount %, Taxes and Amount columns added to the delivery lines</li>
-            <li>Financial totals summary: Untaxed Amount, Tax breakdown, Total</li>
-            <li>Conditional visibility: financial data only shows when the delivery is linked to a Sales Order; internal transfers keep the standard, non-valued layout</li>
-            <li>Pure QWeb inheritance: no Python overrides, no database changes</li>
-        </ul>
-        <h3>Support</h3>
-        <p>
-            Website: <a href="https://www.benamor.tech/">https://www.benamor.tech/</a><br/>
-            WhatsApp: +216 95 129 848
-        </p>
+        <!-- Title and Badges -->
+        <div class="col-12 text-center my-4">
+            <h2 class="oe_slogan" style="color: #714B67; font-weight: 700; font-size: 38px; margin-bottom: 10px;">Valued Delivery Slip</h2>
+            <h3 class="oe_slogan" style="color: #4A4A4A; font-weight: 400; font-size: 20px; margin-top: 0;">Show Sales Order pricing, discount and tax on the Delivery Slip / Picking report</h3>
+            <div style="margin-top: 15px;">
+                <a href="https://github.com/rayen-omar/odoo19-valued-delivery-slip" target="_blank">
+                    <img src="https://img.shields.io/badge/maturity-Production%2FStable-green.png" alt="Production/Stable" style="margin: 0 5px;"/>
+                </a>
+                <a href="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" target="_blank">
+                    <img src="https://img.shields.io/badge/licence-LGPL--3-blue.png" alt="License: LGPL-3" style="margin: 0 5px;"/>
+                </a>
+            </div>
+        </div>
+
+        <!-- Description Card -->
+        <div class="col-12 my-3">
+            <div class="card shadow-sm border-0" style="border-radius: 8px; background-color: #ffffff; padding: 25px;">
+                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 15px;">
+                    This Odoo 19 module adds financial details directly to your PDF Delivery Slip (stock.picking). It displays unit prices, discounts, taxes, and amounts, as well as a complete financial summary (untaxed amount, taxes, and total) if the delivery is linked to a confirmed Sales Order.
+                </p>
+                <p style="font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 0;">
+                    A clean, light, and robust module designed to inherit the standard report to display complete financial information when needed, without altering non-valued internal transfers.
+                </p>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="col-12 my-3">
+            <div class="card shadow-sm border-0" style="border-radius: 8px; background-color: #ffffff; padding: 25px;">
+                <h3 style="color: #714B67; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #f1f1f1; padding-bottom: 10px;">Features</h3>
+                <ul style="font-size: 15px; color: #555555; line-height: 1.8; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;"><strong>Financial Columns:</strong> Adds Unit Price, Discount %, Taxes, and Amount columns to the delivery lines.</li>
+                    <li style="margin-bottom: 10px;"><strong>Totals Summary:</strong> Includes Untaxed Amount, detailed Tax breakdown, and Total amount.</li>
+                    <li style="margin-bottom: 10px;"><strong>Smart Conditional Visibility:</strong> Financial data is only shown when the delivery is linked to a confirmed Sales Order. Internal transfers automatically keep the standard quantities-only layout.</li>
+                    <li style="margin-bottom: 0;"><strong>No Database Overheads:</strong> 100% QWeb (XML) implementation with no database alterations and no custom Python code.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Configuration & Usage -->
+        <div class="col-12 my-3">
+            <div class="card shadow-sm border-0" style="border-radius: 8px; background-color: #ffffff; padding: 25px;">
+                <h3 style="color: #714B67; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #f1f1f1; padding-bottom: 10px;">Configuration &amp; Usage</h3>
+                
+                <h4 style="color: #333333; font-weight: 600; font-size: 16px; margin-bottom: 10px;">Configuration</h4>
+                <p style="font-size: 15px; color: #666666; margin-bottom: 20px;">
+                    No configuration is required for this module. Once installed, it automatically updates the standard delivery slip report layout.
+                </p>
+
+                <h4 style="color: #333333; font-weight: 600; font-size: 16px; margin-bottom: 10px;">Usage Steps</h4>
+                <ol style="font-size: 15px; color: #555555; line-height: 1.8; padding-left: 20px; margin-bottom: 0;">
+                    <li style="margin-bottom: 8px;">Go to the <strong>Sales</strong> app and create a new Sales Order (SO).</li>
+                    <li style="margin-bottom: 8px;">Add lines with products, unit prices, discounts, and taxes, then <strong>Confirm</strong> the Sales Order.</li>
+                    <li style="margin-bottom: 8px;">Open the linked <strong>Delivery</strong> transfer generated under the Sales Order.</li>
+                    <li style="margin-bottom: 8px;">Click on <strong>Print &gt; Delivery Slip</strong>. The PDF report will contain the detailed pricing columns and financial summary.</li>
+                    <li style="margin-bottom: 0;">If you print a Delivery Slip that is not linked to any confirmed Sales Order, it will automatically fall back to the standard layout (quantities only).</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="col-12 my-3">
+            <div class="card shadow-sm border-0" style="border-radius: 8px; background-color: #ffffff; padding: 25px;">
+                <h3 style="color: #714B67; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #f1f1f1; padding-bottom: 10px;">Screenshots</h3>
+                
+                <div class="text-center my-4">
+                    <h5 style="color: #555555; font-weight: 600; margin-bottom: 15px;">Before — Standard Odoo Delivery Slip (quantities only):</h5>
+                    <img src="https://raw.githubusercontent.com/rayen-omar/odoo19-valued-delivery-slip/19.0/valued_delivery_slip/static/description/bl_before.png" alt="Delivery Slip before" class="img-fluid border shadow-sm" style="max-width: 100%; width: 600px; border-radius: 4px; margin-bottom: 30px;"/>
+                    
+                    <h5 style="color: #555555; font-weight: 600; margin-bottom: 15px;">After — With Valued Delivery Slip installed (pricing, discount, tax, totals):</h5>
+                    <img src="https://raw.githubusercontent.com/rayen-omar/odoo19-valued-delivery-slip/19.0/valued_delivery_slip/static/description/bl_after.png" alt="Delivery Slip after" class="img-fluid border shadow-sm" style="max-width: 100%; width: 600px; border-radius: 4px;"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bug Tracker & Credits -->
+        <div class="col-12 my-3">
+            <div class="card shadow-sm border-0" style="border-radius: 8px; background-color: #ffffff; padding: 25px;">
+                <h3 style="color: #714B67; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid #f1f1f1; padding-bottom: 10px;">Bug Tracker &amp; Credits</h3>
+                
+                <h4 style="color: #333333; font-weight: 600; font-size: 16px; margin-bottom: 10px;">Bug Tracker</h4>
+                <p style="font-size: 15px; color: #666666; margin-bottom: 20px;">
+                    Bugs are tracked on <a href="https://github.com/rayen-omar/odoo19-valued-delivery-slip/issues" target="_blank" style="color: #714B67; text-decoration: underline;">GitHub Issues</a>.
+                    In case of trouble, please check there if your issue has already been reported. If you spotted it first, help us smashing it by providing detailed and welcome feedback.
+                </p>
+
+                <h4 style="color: #333333; font-weight: 600; font-size: 16px; margin-bottom: 10px;">Credits</h4>
+                <div style="font-size: 15px; color: #555555; line-height: 1.6;">
+                    <p style="margin-bottom: 5px;"><strong>Authors:</strong> BenAmor Rayeen (<a href="https://www.benamor.tech/" target="_blank" style="color: #714B67;">https://www.benamor.tech/</a>)</p>
+                    <p style="margin-bottom: 5px;"><strong>Contributors:</strong> BenAmor Rayeen &lt;benomorr326@gmail.com&gt;</p>
+                    <p style="margin-bottom: 0;"><strong>Maintainer:</strong> This module is maintained by BenAmor Rayeen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support -->
+        <div class="col-12 my-3">
+            <div class="card shadow-sm text-center border-0" style="border-radius: 8px; background-color: #714B67; padding: 30px; color: #ffffff;">
+                <h3 style="font-weight: 700; margin-bottom: 15px; color: #ffffff;">Need Support?</h3>
+                <p style="font-size: 16px; margin-bottom: 20px; opacity: 0.9;">
+                    For any questions, custom requirements, or professional Odoo support, feel free to contact us.
+                </p>
+                <div style="font-size: 16px;">
+                    <a href="https://www.benamor.tech/" target="_blank" style="color: #ffffff; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); padding: 8px 20px; border-radius: 20px; background-color: rgba(255,255,255,0.1); margin: 5px 10px; display: inline-block;">
+                        🌐 Website
+                    </a>
+                    <a href="https://wa.me/21695129848" target="_blank" style="color: #ffffff; text-decoration: none; border: 1px solid rgba(255,255,255,0.4); padding: 8px 20px; border-radius: 20px; background-color: rgba(255,255,255,0.1); margin: 5px 10px; display: inline-block;">
+                        💬 WhatsApp: +216 95 129 848
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
