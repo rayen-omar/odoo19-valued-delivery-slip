@@ -44,11 +44,13 @@ Screenshots
 
 .. image:: https://raw.githubusercontent.com/rayen-omar/odoo19-valued-delivery-slip/19.0/valued_delivery_slip/static/description/bl_before.png
    :alt: Delivery Slip before
+   :width: 600px
 
 **After** — With Valued Delivery Slip installed (pricing, discount, tax, totals):
 
 .. image:: https://raw.githubusercontent.com/rayen-omar/odoo19-valued-delivery-slip/19.0/valued_delivery_slip/static/description/bl_after.png
    :alt: Delivery Slip after
+   :width: 600px
 
 Bug Tracker
 ===========
