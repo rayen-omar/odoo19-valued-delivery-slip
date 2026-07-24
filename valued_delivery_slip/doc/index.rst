@@ -42,12 +42,12 @@ Screenshots
 
 **Before** — Standard Odoo Delivery Slip (quantities only):
 
-.. figure:: ../static/description/bl_before.png
+.. figure:: static/description/bl_before.png
    :alt: Delivery Slip before
 
 **After** — With Valued Delivery Slip installed (pricing, discount, tax, totals):
 
-.. figure:: ../static/description/bl_after.png
+.. figure:: static/description/bl_after.png
    :alt: Delivery Slip after
 
 Bug Tracker
